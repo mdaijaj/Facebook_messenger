@@ -51,7 +51,6 @@ time.sleep(5)
 
 #sent a message 
 # newMessage=driver.find_element_by_css_selector('#js_8 > div:nth-child(2) > div._3-98 > div > div > div > div > div._3qny._4bl7 > div > div._1ol4 > div.center._2pi0._1lil > div > div._3-8y > button')
-messageAgain=driver.find_element_by_xpath('//*[@id="js_3"]/div[2]/div[1]/div/div/div/div/div[2]/div/div[2]/div[1]/div/button')
 
 # time.sleep(2)
 # if(button==button):
@@ -63,7 +62,7 @@ messageAgain=driver.find_element_by_xpath('//*[@id="js_3"]/div[2]/div[1]/div/div
 
 # else:
 #again sent a message or chat
-messageAgain.find_element_by_xpath('//*[@id="js_3"]/div[2]/div[1]/div/div/div/div/div[2]/div/div[2]/div[1]/div/button')
+messageAgain=driver.find_element_by_xpath('//*[@id="js_3"]/div[2]/div[1]/div/div/div/div/div[2]/div/div[2]/div[1]/div/button')
 sleep(3)                        
 messageAgain.send_keys("what is the price", Keys.ENTER)
 input('Press anything to quit') 
